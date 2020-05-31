@@ -49,6 +49,7 @@ create_desktop_for_app()
     echo "Terminal=$terminal_flag" >> $app_desktop
     echo "Encoding=UTF-8" >> $app_desktop
     sudo chmod a+x $app_desktop
+    mv ~/.local/share/applications/$app_desktop ~/Desktop
 }
 
 main
