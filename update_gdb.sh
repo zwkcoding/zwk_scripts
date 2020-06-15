@@ -11,3 +11,5 @@ rm -rf build && mkdir -p build && cd build
 ../configure
 make -j$(nproc)
 sudo cp gdb/gdb /usr/local/bin/gdb
+sudo mkdir -p /usr/local/share/gdb/python/gdb
+sudo cp -rf ~/software/gdb-9.2/gdb/python/lib/gdb/* /usr/local/share/gdb/python/gdb/
