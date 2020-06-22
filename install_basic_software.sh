@@ -9,3 +9,8 @@ sudo apt install -y git
 sudo apt install -y vim
 sudo apt install -y global
 
+sudo apt install gdebi
+sudo apt install synaptic
+sudo apt install xclip
+sudo apt install jq
+sudo apt install gnome-tweak-tool
