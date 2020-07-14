@@ -8,5 +8,5 @@ files=$(ls)
 for filename in $files
 do
  echo $filename
- ln -fvs ${DIR}/$filename /home/uisee/uos/$filename
+ ln -fvs ${DIR}/$filename $1/$filename
 done
