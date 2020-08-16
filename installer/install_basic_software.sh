@@ -14,3 +14,5 @@ sudo apt install synaptic
 sudo apt install xclip
 sudo apt install jq
 sudo apt install gnome-tweak-tool
+sudo apt install cloc # count lines of code
+sudo apt install screenfetch # system info
