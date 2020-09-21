@@ -7,9 +7,9 @@ set -e
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 read -p "input name for your app:" app_name
-echo $app_name
+echo ${app_name}
 read -p "input The path to the executable to run:" app_path
-echo $app_path
+echo ${app_path}
 # read -p "input The name of the icon that will be used to display this entry:" icon
 # echo $icon
 read -p "whether this application needs to be run in a terminal or not:(y/n)" ans
@@ -21,7 +21,7 @@ else
     terminal_flag="false"
 fi
 
-app_desktop="$app_name.desktop"
+app_desktop="${app_name}.desktop"
 
 main()
 {
@@ -39,7 +39,7 @@ create_desktop_for_app()
 {
     echo "create file in ~/.local/share/applications"
     cd ~/.local/share/applications
-    touch '$app_desktop'
+    touch ${app_desktop}
     # write lines
     echo "[Desktop Entry]" >> $app_desktop
     echo "Name=$app_name" >> $app_desktop

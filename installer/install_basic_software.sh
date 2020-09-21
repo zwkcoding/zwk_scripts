@@ -16,3 +16,17 @@ sudo apt install jq
 sudo apt install gnome-tweak-tool
 sudo apt install cloc # count lines of code
 sudo apt install screenfetch # system info
+
+# aptitude handled the dependencies correctly and even removed the packages that were creating the trouble
+
+sudo apt install aptitude
+
+
+# Screensaver
+sudo apt-get remove gnome-screensaver
+sudo apt-get install xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
+sudo apt-add-repository ppa:alexanderk23/ppa
+sudo apt-get update
+sudo apt-get install gluqlo
+# edit ~/.xscreensaver [programs] :gluqlo -root \n\
+
