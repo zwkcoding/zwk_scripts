@@ -13,10 +13,10 @@ rm -rf sogou-qimpanel
 
 rm -rf ~/.sogouinput
 
-#pidof fcitx | xargs kill
-#pidof sogou-qimpanel | xargs kill -9
-kill $(pidof fcitx)
-kill $(pidof sogou-qimpanel)
+pidof fcitx | xargs kill
+pidof sogou-qimpanel | xargs kill -9
+#kill $(pidof fcitx)
+#kill $(pidof sogou-qimpanel)
 fcitx&
 sogou-qimpanel&
 
