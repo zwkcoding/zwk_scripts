@@ -7,7 +7,7 @@ set -ev
 
 cd /tmp && git clone https://github.com/rofl0r/proxychains-ng
 cd proxychains-ng ./configure --prefix=/usr --sysconfdir=/etc
-make && sudo make install #&& sudo make install-config 
+make && sudo make install && sudo make install-config 
 
 sudo sed -i '/socks4 [[:space:]] 127.0.0.1/s/^/#&/' /etc/proxychains.conf
 sudo sed -i '$a socks5 127.0.0.1 1080' /etc/proxychains.conf
